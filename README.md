@@ -32,18 +32,6 @@ Built for **ethical diagnostics**, **security awareness**, and **administrative 
 
 ---
 
-## 🧰 Example Output
-
-Running scan.. Scanned subnet: 192.168.11.0/24 — found 2 devices
-IP Hostname MAC Alive Open Ports
-192.168.11.112 - 1c:69:7a:a1:49:a7 True 139(NetBIOS), 445(SMB), 338... !!
-192.168.11.254 - 90:6c:ac:a9:6e:ed True 22(SSH), 80(HTTP)
-
-Scan finished successfully.
-Press any key to close...
-
----
-
 ## ⚙️ Installation
 
 ### 1️.Requirements
