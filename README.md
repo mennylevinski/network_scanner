@@ -21,7 +21,8 @@ Use responsibly and in compliance with your local governance.
 - 🔎 **Open Port Detection**, Scans common service ports (FTP, SSH, SMB, HTTP, RDP, etc.).
 - 🧩 **Console Mode**, Clean “black console” output; stays open after completion.
 - 🚫 **Risk Highlighting**, Marks known vulnerable ports with “!!”.
-- 🧾 **No Dependencies**, 100% Python standard library.
+- 🧾 **Logging system**, exportable log file with for more detailed output.
+
 
 ---
 
