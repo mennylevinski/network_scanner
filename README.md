@@ -16,13 +16,12 @@ Use responsibly and in compliance with your local governance.
 
 ## 🚀 Features
 
-- 🖧 **Automatic Subnet Detection**, Finds your local IP and scans the connected network.
+- 🖧 **Automatic Subnet Detection**, detects your IPv4 subnet and scans the local network.
 - ⚡ **Fast & Accurate**, Combines ICMP, ARP, and socket checks.
 - 🔎 **Open Port Detection**, Scans common service ports (FTP, SSH, SMB, HTTP, RDP, etc.).
 - 🧩 **Console Mode**, Clean “black console” output; stays open after completion.
 - 🚫 **Risk Highlighting**, Marks known vulnerable ports with “!!”.
 - 🧾 **Logging system**, exportable log file with for more detailed output.
-
 
 ---
 
