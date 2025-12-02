@@ -455,6 +455,13 @@ def print_devices(devices: list):
 
     logging.info(sep_line)
 
+# --- Define private IP check ---
+def is_private_ip(ip: str) -> bool:
+    try:
+        return ipaddress.ip_address(ip).is_private
+    except ValueError:
+        return False
+
 # ======= Main =======
 if __name__ == "__main__":
     ensure_console("Light Network Scanner")
@@ -501,9 +508,10 @@ while True:
     print("\nSelect scan type:")
     print("1) LAN scanning")
     print("2) Custom IP range")
-    scan_mode = input("Enter 1 or 2: ").strip()
+    print("3) Exit")
+    scan_mode = input("\nEnter choice: ").strip()
 
-    if scan_mode not in {"1", "2"}:
+    if scan_mode not in {"1", "2", "3"}:
         print("Invalid choice!")
         continue
 
@@ -559,14 +567,35 @@ while True:
         logging.info(f"\nStarting custom scan for {len(target_ips)} targets...")
         scan_results = {}
 
+        # Fixed: remove \n from spinner message
         spinner = Spinner("Running custom scan")
         spinner.start()
         start = time.time()
 
         try:
             for ip in target_ips:
+                # 1 Only scan private IPs
+                if not is_private_ip(ip):
+                    logging.info(f"\n[SKIP] {ip} is not private — skipping.")
+                    continue
+                # 2 Ping before scanning
+                if not _ping(ip, timeout_ms=400):
+                    logging.info(f"[SKIP] {ip} did not respond to ping — skipping.")
+                    continue
+                # 3 Convert single IP to /32 subnet for test_print
                 single_subnet = ipaddress.ip_network(f"{ip}/32")
-                results = test_print(subnet=single_subnet, do_port_scan=True, fast=True, silent=True)
+                # 4 Run silent scan
+                try:
+                    results = test_print(
+                        subnet=single_subnet,
+                        do_port_scan=True,
+                        fast=True,
+                        silent=True
+                    )
+                except Exception as e:
+                    logging.error(f"[ERROR] Scan failed for {ip}: {e}")
+                    continue
+                # 5 Collect unique results
                 if results:
                     for d in results:
                         key = d.get("ip") or d.get("mac")
@@ -575,8 +604,13 @@ while True:
         finally:
             spinner.stop()
             elapsed = time.time() - start
-            logging.info(f"Custom scan finished in {elapsed:.1f}s — found {len(scan_results)} devices.")
-            print_devices(list(scan_results.values()))
+            if is_private_ip(ip):
+                logging.info(f"Custom scan finished in {elapsed:.1f}s — found {len(scan_results)} devices.")
+                print_devices(list(scan_results.values()))
+
+    elif scan_mode == "3":
+        input("\nGoodby! Press Enter to exit...")
+        sys.exit(0)
 
     export = input("\nExport logs to text file? (Y to export, Enter to skip): ").strip().lower()
     if export == "y":
