@@ -34,7 +34,7 @@ Use responsibly and in compliance with your local governance.
 
 ### 2️ Download & Run
 - Windows: `python light-net-scanner.py`
-- Linux: `./light-net-scanner.py`
+- Linux: `python3 light-net-scanner.py`
 
 ---
 ## 🖼️ Screenshot
