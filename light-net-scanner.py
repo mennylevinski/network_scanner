@@ -110,7 +110,7 @@ class Spinner:
         self.thread.join()
 
 # Default common ports to check quickly
-COMMON_PORTS = [21, 22, 23, 67, 68, 69, 80, 53, 123, 137, 138, 139, 161, 389, 443, 445, 1433, 3389, 5900]
+COMMON_PORTS = [21, 22, 23, 67, 68, 69, 80, 53, 123, 137, 138, 161, 389, 443, 445, 1433, 3389, 5900]
 
 # OS detection
 IS_WINDOWS = platform.system().lower().startswith("win")
@@ -628,3 +628,4 @@ while True:
             f.write(log_buffer.getvalue())
         print(f"Logs exported → {export_path}")
         continue
+
