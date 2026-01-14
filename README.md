@@ -32,7 +32,10 @@ Use responsibly and in compliance with your local governance.
 - Works on **Windows**, **Linux**
 - No external packages required
 
-### 2️ Download & Run
+### 2️ Download
+- Download [advanced_net_scanner.py](advanced_net_scanner.py)
+
+### 3️⃣ Run
 - Windows: `python advanced_net_scanner.py`
 - Linux:<br> 
       1. `chmod +x advanced_net_scanner.py` <br>
