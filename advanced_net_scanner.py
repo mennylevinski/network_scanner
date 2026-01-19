@@ -34,6 +34,8 @@ from typing import List, Dict, Iterable, Optional
 from io import StringIO
 from typing import Optional
 
+version = "1.0.0"
+
 log_buffer = io.StringIO()
 now = datetime.datetime.now().replace(microsecond=0)
 
@@ -502,7 +504,7 @@ def is_private_ip(ip: str) -> bool:
 
 # ======= Main =======
 if __name__ == "__main__":
-    ensure_console("Advanced Network Scanner")
+    ensure_console(f"Advanced Network Scanner {version}")
 
     log_level = logging.DEBUG if "--debug" in sys.argv else logging.INFO
     log_file = None
