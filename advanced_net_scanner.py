@@ -526,8 +526,7 @@ if __name__ == "__main__":
     setup_logger(level=log_level, logfile=log_file)
 
     # --- Detect local IP and subnet ---
-    logging.info(f"Advanced Network Scanner {version}")
-    logging.info(f"© 2025 Menny Levinski – MIT License\n")
+    print(f"© 2025 Menny Levinski – MIT License\n")
     logging.info(f"Date:{now}")
     interface = _first_interface()
     logging.info(f"Interface: {interface or 'N/A'}")
