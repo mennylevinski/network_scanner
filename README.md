@@ -25,7 +25,28 @@ Use responsibly and in compliance with your local governance.
 
 ---
 
-## ⚙️ Installation
+## Safety Notice
+
+Advanced Network Scanner is safe to use when downloaded from the official source.
+Because the application performs network discovery and scanning, some antivirus products may incorrectly flag or restrict its execution. This is a common false positive for legitimate network diagnostic tools.
+If you trust this application, you may need to add it as an exception in your antivirus software.
+
+---
+
+## ⚙️ Installation Windows EXE
+
+Download the latest Windows EXE from the Releases page.
+Double-click the executable to run.
+
+If Microsoft Defender SmartScreen appears:
+- Click More info
+- Click Run anyway
+
+No Python installation is required when using the EXE.
+
+---
+
+## 🧩 Installation Cross Platform
 
 ### 1️ Requirements
 - Python **3.0+**
