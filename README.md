@@ -13,7 +13,7 @@ Licensed under the [MIT License](LICENSE).
 - **Custom Scan Mode**, user can select to target a spesific IP address or IP ranges
 - **Fast & Accurate**, combines ICMP, ARP, and socket checks and auto discovery
 - **Port Detection**, scans common service ports (FTP, SMB, SSH, HTTP, RDP, etc)
-- **Console / CLI**, clean “black console” output, stays open after completion
+- **Terminal / CLI**, clean “black console” output, stays open after completion
 - **Logging system**, exportable log file (TXT format) for more detailed output
 
 ---
