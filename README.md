@@ -39,7 +39,9 @@ If you trust this application, you may need to add it as an exception in your an
 
 ---
 
-## ⚙️ Installation Windows EXE
+## 💿 Installation
+
+### Windows EXE
 
 Download the latest [Advanced_Net_Scanner_1.0.0.zip](https://github.com/mennylevinski/advanced_net_scanner/releases/download/1.0.0/Advanced_Net_Scanner_1.0.0.zip). Unzip and double-click the executable to run.
 
@@ -56,17 +58,17 @@ Source: https://docs.python.org/license.html
 
 ---
 
-## 🧩 Installation Cross Platform
+### Cross Platform
 
-### 1️ Requirements
+#### 1️ Requirements
 - Python **3.0+**
 - Works on **Windows**, **Linux**
 - No external packages required
 
-### 2️ Download
+#### 2️ Download
 - Download [advanced_net_scanner.py](build/advanced_net_scanner.py)
 
-### 3️⃣ Run
+#### 3️⃣ Run
 - Windows: `python advanced_net_scanner.py`
 - Linux:<br> 
       1. `chmod +x advanced_net_scanner.py` <br>
