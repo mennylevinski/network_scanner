@@ -8,11 +8,11 @@ Lite Network Scanner:
 LAN discovery & port audit tool.
 
 Windows:
-python advanced_net_scanner.py
+python lite_net_scanner.py
 
 Linux:
-chmod +x advanced_net_scanner.py
-python3 advanced_net_scanner.py
+chmod +x lite_net_scanner.py
+python3 lite_net_scanner.py
 """
 
 import io
@@ -683,4 +683,3 @@ while True:
             f.write(log_buffer.getvalue())
         print(f"Logs exported → {export_path}")
         continue
-
