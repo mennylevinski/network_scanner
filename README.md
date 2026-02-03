@@ -5,8 +5,6 @@ Built for ethical diagnostics, security awareness, and administrative auditing. 
 
 Licensed under the [MIT License](LICENSE).
 
-![App Screenshot](media/netscanner_screenshot.png)
-
 ---
 
 ## ✨ Features
@@ -17,6 +15,10 @@ Licensed under the [MIT License](LICENSE).
 - **Port Detection**, scans common service ports (FTP, SMB, SSH, HTTP, RDP, etc)
 - **Terminal / CLI**, clean “black console” output, stays open after completion
 - **Logging system**, exportable log file (TXT format) for more detailed output
+
+<br>
+
+![App Screenshot](media/netscanner_screenshot.png)
 
 ---
 
