@@ -1,4 +1,4 @@
-# Advanced Network Scanner
+# Lite Network Scanner
 
 Open source, cross platform Python tool designed to discover devices on your local IPv4 network.
 Built for ethical diagnostics, security awareness, and administrative auditing. Suitable for personal and organizational use.
@@ -69,7 +69,7 @@ Source: https://docs.python.org/license.html
 - Download [advanced_net_scanner.py](build/advanced_net_scanner.py)
 
 #### 3️⃣ Run
-- Windows: `python advanced_net_scanner.py`
+- Windows: `python lite_net_scanner.py`
 - Linux:<br> 
-      1. `chmod +x advanced_net_scanner.py` <br>
-      2. `python3 advanced_net_scanner.py`
+      1. `chmod +x lite_net_scanner.py` <br>
+      2. `python3 lite_net_scanner.py`
