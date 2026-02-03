@@ -5,6 +5,8 @@ Built for ethical diagnostics, security awareness, and administrative auditing. 
 
 Licensed under the [MIT License](LICENSE).
 
+![App Screenshot](media/netscanner_screenshot.png)
+
 ---
 
 ## ✨ Features
@@ -67,7 +69,3 @@ Source: https://docs.python.org/license.html
 - Linux:<br> 
       1. `chmod +x advanced_net_scanner.py` <br>
       2. `python3 advanced_net_scanner.py`
-
----
-## 🖼️ Screenshot
-![App Screenshot](media/netscanner_screenshot.png)
