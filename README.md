@@ -22,7 +22,7 @@ Licensed under the [MIT License](LICENSE).
 
 ---
 
-## ✔️ Legal Use
+## ✔️ Lawful Use
 
 This tool is intended solely for lawful and authorized use.
 You must obtain explicit permission from the network owner before scanning, auditing, or testing any systems.
