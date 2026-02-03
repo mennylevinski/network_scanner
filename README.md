@@ -39,7 +39,7 @@ If you trust this application, you may need to add it as an exception in your an
 
 ---
 
-## 💿 Installation
+## 💾 Installation
 
 ### Windows EXE
 
