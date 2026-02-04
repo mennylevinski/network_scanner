@@ -65,8 +65,8 @@ Source: https://docs.python.org/license.html
 - Works on **Windows**, **Linux**
 - No external packages required
 
-#### 2️ Download
-- Download [lite_net_scanner.py](script/lite_net_scanner.py)
+#### 2️ Script
+- Download the script [lite_net_scanner.py](script/lite_net_scanner.py)
 
 #### 3️⃣ Run
 - Windows: `python lite_net_scanner.py`
