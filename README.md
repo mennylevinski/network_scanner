@@ -1,6 +1,6 @@
 # Lite Network Scanner
 
-Cross-platform, open source Python tool designed to discover devices on your local IPv4 network.
+Cross-platform Python tool designed to discover devices on your local IPv4 network.
 Built for ethical diagnostics, security awareness, and administrative auditing. Suitable for personal and organizational use.
 
 Licensed under the [MIT License](LICENSE).
@@ -58,7 +58,7 @@ Source: https://docs.python.org/license.html
 
 ---
 
-### Cross Platform
+### Cross-platform
 
 #### 1️ Requirements
 - Python **3.0+**
