@@ -66,7 +66,7 @@ Source: https://docs.python.org/license.html
 - No external packages required
 
 #### 2️ Download
-- Download [Lite_Net_Scanner.py](build/Lite_Net_Scanner.py)
+- Download [lite_net_scanner.py](script/lite_net_scanner.py)
 
 #### 3️⃣ Run
 - Windows: `python lite_net_scanner.py`
