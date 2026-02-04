@@ -5,7 +5,7 @@
 Author: Menny Levinski
 
 Lite Network Scanner:
-LAN discovery & port audit tool.
+LAN discovery & port audit tool for IPv4 networks.
 
 Windows:
 python lite_net_scanner.py
